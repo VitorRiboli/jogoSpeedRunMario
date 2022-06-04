@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.game-board {
+    width: 90vh;
+    height: 500px;
+    border: 2px solid rgb(32, 32, 32);
+    border-radius: 10px;
+    margin: 0 auto;  /*Serve para alinhar quando nao se usa o display flex  */
+    position: relative;
+    overflow: hidden;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 2s infinite linear; /*A animação ocorre de maneira infinita com velocidade linear */
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+

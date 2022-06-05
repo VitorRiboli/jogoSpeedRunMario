@@ -1,4 +1,3 @@
-
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 
@@ -7,7 +6,7 @@ const jump = function() {
 
     setTimeout(function() {
         mario.classList.remove('jump');
-    }, 500)
+    }, 700);
 }
 
 const loop = setInterval(function() {
@@ -35,6 +34,13 @@ const loop = setInterval(function() {
     }
 
 
-}, 10)
+}, 10);
 
 document.addEventListener('keydown', jump);
+
+//Tela de Game-over
+
+//Placar 
+
+//Reiniciar
+

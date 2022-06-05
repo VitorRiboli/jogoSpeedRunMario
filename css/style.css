@@ -20,7 +20,7 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.7s infinite linear; /*A animação ocorre de maneira infinita com velocidade linear */
+    animation: pipe-animation 2s infinite linear; /*A animação ocorre de maneira infinita com velocidade linear */
 }
 
 @keyframes pipe-animation {

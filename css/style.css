@@ -69,4 +69,18 @@
     }
 }
 
+.clouds {
+    width: 550px;
+    position: absolute;
+    animation: clouds 20s infinite linear;
+}
 
+@keyframes clouds {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}

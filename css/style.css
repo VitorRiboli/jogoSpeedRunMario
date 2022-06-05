@@ -6,20 +6,21 @@
 }
 
 .game-board {
-    width: 90vh;
-    height: 500px;
-    border: 2px solid rgb(32, 32, 32);
+    width: 100%;
+    height: 700px;
+    border-bottom: 15px solid rgb(145, 255, 0);
     border-radius: 10px;
     margin: 0 auto;  /*Serve para alinhar quando nao se usa o display flex  */
     position: relative;
     overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
 }
 
 .pipe {
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 2s infinite linear; /*A animação ocorre de maneira infinita com velocidade linear */
+    animation: pipe-animation 1.7s infinite linear; /*A animação ocorre de maneira infinita com velocidade linear */
 }
 
 @keyframes pipe-animation {
@@ -39,7 +40,7 @@
 }
 
 .jump {
-    animation: jump 600ms ease-out;
+    animation: jump 700ms ease-out;
 }
 
 @keyframes jump {
@@ -52,13 +53,16 @@
     }
 
     50% {
-        bottom: 180px;
+        bottom: 190px;
     }
 
     60% {
-        bottom: 170px;
+        bottom: 180px;
     }
 
+    80% {
+        bottom: 100px;
+    }
 
     100% {
         bottom: 0px;
